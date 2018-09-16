@@ -15,6 +15,11 @@
     鼠标悬停几秒钟查看此处动态绑定的提示信息！
   </span>
    </div>
+  <div id="app-2">
+         <span v-bind:title="mess">
+             hello
+         </span>
+  </div>
  <script>
       var app=new Vue({
           el:'#ap',
@@ -26,6 +31,12 @@
           el:"#app1",
           data:{
               message1:'页面加载与---'+new Date().toLocaleString(),
+          }
+      });
+      var app2=new Vue({
+          el:"#app-2",
+          data:{
+              mess:"Hello"
           }
       })
  </script>
