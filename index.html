@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml"
+      xmlns:v-on="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -24,20 +25,42 @@
 
       <p v-if="seen1">你现在看到了吗？</p>
   </div>
- <script>
-      var app=new Vue({
-          el:'#ap',
-          data:{
-              message:'Hello Vue!0000000000000000011111111111111111'
-          }
-      });
-      var app1=new Vue({
-          el:"#app1",
-          data:{
-              message1:'页面加载与---'+new Date().toLocaleString(),
-          }
-      });
-      var app2=new Vue({
+  <div id="app-4">
+      <ol>
+          <li v-for="todo in todos">
+              {{todo.text}}
+          </li>
+      </ol>
+  </div>
+  <!--<div id="app-5">-->
+      <!--<p>-->
+          <!--{{message}}-->
+      <!--</p>-->
+       <!--<button v-on:click="reverseMessage">逆转消息</button>-->
+  <!--</div>-->
+  <div id="app-5">
+      <p>{{ message }}</p>
+      <button v-on:click="reverseMessage">逆转消息</button>
+      <button v-on:click="reverseMessage">逆转消息</button>
+  </div>
+  <div id="app-6">
+      <p>{{message}}</p>
+      <input v-model="message">
+  </div>
+  <script>
+     const app = new Vue({
+         el: '#ap',
+         data: {
+             message: 'Hello Vue!0000000000000000011111111111111111'
+         }
+     });
+     const app1 = new Vue({
+         el: "#app1",
+         data: {
+             message1: '页面加载与---' + new Date().toLocaleString(),
+         }
+     });
+     var app2=new Vue({
           el:"#app-2",
           data:{
               mess:"Hello"
@@ -48,7 +71,36 @@
          data:{
               seen1 :false,
          }
+     });
+     var  app4=new Vue({
+            el:"#app-4",
+           data:{
+                todos:[
+                    { text: '学习 JavaScript' },
+                    { text: '学习 Vue' },
+                    { text: '整个牛项目' }
+                ]
+            }
+
+     });
+     var app5=new Vue({
+         el:'#app-5',
+         data:{
+             message:'Hello Vue.js!',
+         },
+           methods:{
+               reverseMessage: function () {
+                                this.message = this.message.split('').reverse().join('')
+                           }
+           }
      })
+   var app6=new Vue({
+        el:"#app-6",
+       data:{
+            message:"Hello Vuew",
+       },
+
+   })
  </script>
 </body>
 </html>
