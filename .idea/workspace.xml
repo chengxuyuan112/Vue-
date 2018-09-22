@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="695e5380-ea86-41c9-bbde-6e10dceff51e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dele1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue.md" beforeDir="false" afterPath="$PROJECT_DIR$/Vue.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dele2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dele1" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,6 +28,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="dele1" value="2" />
+          <entry key="dele2" value="1" />
           <entry key="html" value="1" />
           <entry key="js" value="1" />
           <entry key="md" value="5" />
@@ -41,7 +41,7 @@
           <entry key="HTML" value="1" />
           <entry key="JavaScript" value="1" />
           <entry key="Markdown" value="5" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="RNG Compact" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -49,6 +49,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dele1" value="20" />
+          <entry key="dele2" value="17" />
           <entry key="html" value="1145" />
           <entry key="js" value="11" />
           <entry key="md" value="60" />
@@ -59,7 +60,7 @@
           <entry key="HTML" value="1145" />
           <entry key="JavaScript" value="11" />
           <entry key="Markdown" value="60" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="PLAIN_TEXT" value="37" />
         </counts>
       </usages-collector>
     </session>
@@ -100,10 +101,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dele1">
+        <entry file="file://$PROJECT_DIR$/dele2">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -147,6 +148,7 @@
         <option value="$PROJECT_DIR$/comment.js" />
         <option value="$PROJECT_DIR$/Vue.md" />
         <option value="$PROJECT_DIR$/dele1" />
+        <option value="$PROJECT_DIR$/dele2" />
       </list>
     </option>
   </component>
@@ -239,7 +241,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16568000" />
+    <option name="totallyTimeSpent" value="16827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -308,6 +310,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dele1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Vue.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -318,10 +327,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dele1">
+    <entry file="file://$PROJECT_DIR$/dele2">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
