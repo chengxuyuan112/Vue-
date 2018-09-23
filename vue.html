@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+    <script src="node_modules/axios/dist/axios.js"></script>
+</head>
+<body>
+<style>
+    .hd{
+        color: red;
+
+    }
+    .hd1{
+      color: chartreuse;
+    }
+    .hd2{
+        color: darkmagenta;
+    }
+
+</style>
+<div id="app">
+    {{title}}
+</div>
+<div id="app1">
+    <h1 v-bind:class="hd">hdphp.com</h1>
+    <h2 v-bind:class="'hd1'">bbbbbbbbbbbbbbb</h2>
+</div>
+<div id="app3">
+    <h1>{{hd}}</h1>
+    <input type="text" v-model="hd">
+    <h2 v-once>{{hd1}}</h2>
+</div>
+<div id="app4">
+  <h1 v-text="hd"></h1>
+   <h1 v-html="hd"></h1>
+</div>
+<div id="app5">
+    <h1 v-once=""></h1>
+    <h1 v-bind:class="'hd'+n">{{n}}，后盾网，</h1>
+    <input type="text" v-model="n">
+    <input type="radio" value="1" v-model="n">红色
+    <input type="radio" value="2" v-model="n">绿色
+</div>
+<div id="app6">
+    <input type="text" v-model="n1">+
+    <input type="text" v-model="n2">=
+    <input type="text" v-model="sum">
+</div>
+<div id="app7">
+    <input type="text" v-model="words">
+    <h1>搜索的结果是:{{result}}</h1>
+</div>
+  <script>
+      var app=new Vue({
+            el:"#app",
+          data:{
+                title:"自学Vue第一节",
+                hd:'red'
+          }
+      });
+      var app1=new Vue({
+          el:'#app1',
+          data: {
+              hd: 'hd'
+          }
+      });
+    var app2=new Vue({
+        el:'#app3',
+        data:{
+            hd:'后盾人',
+            hd1:'后盾人111111'
+        },
+    });
+     var app4=new Vue({
+         el:'#app4',
+         data:{
+             hd:'<h1 style="color: chartreuse">hd.com</h1>'
+         }
+     });
+      var app5=new Vue({
+          el:'#app5',
+          data:{
+              n:1
+          }
+      });
+      var app6=new Vue({
+          el:'#app6',
+          data:{
+              n1:0,
+              n2:0,
+          },
+          computed:{
+               sum:function () {
+                  return this.n1*1+this.n2*1;
+              },
+              sum1(){
+
+              }
+          }
+      });
+      var app7=new Vue({
+          el:'#app7',
+          watch:{
+              words: function (a,b) {
+                  console.log(a+"====>"+b);
+                  axios.get('9.php?word='+a).then(function (response) {
+                       console.log(response);
+                      console.log(this);
+                      app7.result=response.data;
+                  })
+              }
+          },
+          data:{
+              result:'',
+              words:''
+          }
+      })
+  </script>
+</body>
+</html>
